@@ -555,7 +555,7 @@ function sysCall_init()
     
     --Associated parameters
 
-    --Connections between the VRN final neuron to the inner joint motors of the legs
+    --notes: Weighttr_I14 is the same as the weight between Tc joint (left) and right sensory signal (I1)
 
     Weighttr_I14 = {{Weighttr0_I14}, {Weighttr1_I14}, {Weighttr2_I14}, {Weighttr3_I14}, {Weighttr4_I14}, {Weighttr5_I14}, {Weighttr6_I14}, {Weighttr17_I14}, {Weighttr18_I14}, {Weighttr19_I14}, {Weighttr20_I14}, {Weighttr21_I14}, {Weighttr22_I14}, {Weighttr23_I14}, {Weighttr24_I14}}
 
@@ -576,7 +576,7 @@ function sysCall_init()
     ---Right motors
     
     --Associated parameters
-    --Connections between the VRN final neuron to the inner joint motors of the legs
+    --notes: Weighttr_I13 is the same as the weight between Tc joint (right) and left sensory signal (I0)
     Weighttr_I13 = {{Weighttr7_I13}, {Weighttr8_I13}, {Weighttr9_I13}, {Weighttr10_I13}, {Weighttr11_I13}, {Weighttr12_I13}, {Weighttr13_I13}, {Weighttr15_I13}, {Weighttr16_I13}, {Weighttr25_I13}, {Weighttr26_I13}, {Weighttr27_I13}, {Weighttr28_I13}, {Weighttr29_I13}}
 
     for c = 1, 15 do
