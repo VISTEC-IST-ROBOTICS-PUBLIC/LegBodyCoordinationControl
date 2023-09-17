@@ -1,7 +1,7 @@
 function sysCall_init()
 
     --Save information about neurons and joints into a text file in your specified file path.
-    file = io.open( "/home/nopparada-m/Desktop/millipede_sim/raw_data/reverse/ws3/wall2/ws3_wall_10", "w+" )
+    file = io.open( "/home/nopparada-m/Desktop/millipede_sim/raw_data/reduce/ws3/square/ws3_square_10", "w+" )
     
     --Determine what parameters to be saved in your above text file
     file:write('Output_C0\t Output_C1\t IR0_signal\t IR1_signal\t IR0_signal\t IR1_signal\t Output_I0\t Output_I1\t Output_I3b\t Output_I4b\t Output_J0\t Output_J1\t Output_J2\t Output_J3\t Output_J4\t Output_J5\t Output_J6\t Output_J7\t Output_I13\t Output_I14\t tr_0_2_control\t tr_1_2_control\t tr_2_2_control\t tr_3_2_control\t tr_4_2_control\t tr_5_2_control\t tr_6_2_control\t tr_17_2_control\t tr_18_2_control\t tr_19_2_control\t tr_20_2_control\t tr_21_2_control\t tr_22_2_control\t tr_23_2_control\t tr_24_2_control\t pf_0_2_control\t pf_1_2_control\t pf_2_2_control\t pf_3_2_control\t pf_4_2_control\t pf_5_2_control\t pf_6_2_control\t pf_17_2_control\t pf_18_2_control\t pf_19_2_control\t pf_20_2_control\t pf_21_2_control\t pf_22_2_control\t pf_23_2_control\t pf_24_2_control\t tr_7_2_control\t tr_8_2_control\t tr_9_2_control\t tr_10_2_control\t tr_11_2_control\t tr_12_2_control\t tr_13_2_control\t tr_15_2_control\t tr_14_2_control\t tr_16_2_control\t tr_25_2_control\t tr_26_2_control\t tr_27_2_control\t tr_28_2_control\t tr_29_2_control\t pf_7_2_control\t pf_8_2_control\t pf_9_2_control\t pf_10_2_control\t pf_11_2_control\t pf_12_2_control\t pf_13_2_control\t pf_15_2_control\t pf_14_2_control\t pf_16_2_control\t pf_25_2_control\t pf_26_2_control\t pf_27_2_control\t pf_28_2_control\t pf_29_2_control\t tt_0_motor\t tt_1_motor\t tt_2_motor\t tt_3_motor\t tt_4_motor\t tt_5_motor\t tt_6_motor\t tt_17_motor\t tt_18_motor\t tt_19_motor\t tt_20_motor\t tt_21_motor\t tt_22_motor\t tt_23_motor\t tt_24_motor\t tt_7_motor\t tt_8_motor\t tt_9_motor\t tt_10_motor\t tt_11_motor\t tt_12_motor\t tt_13_motor\t tt_15_motor\t tt_14_motor\t tt_16_motor\t tt_25_motor\t tt_26_motor\t tt_27_motor\t tt_28_motor\t tt_29_motor\t a\t b\t cx0_joint_pos\t cx1_joint_pos\t cx2_joint_pos\t cx3_joint_pos\t cx4_joint_pos\t cx5_joint_pos\t cx6_joint_pos\t cx17_joint_pos\t cx18_joint_pos\t cx19_joint_pos\t cx20_joint_pos\t cx21_joint_pos\t cx22_joint_pos\t cx23_joint_pos\t cx24_joint_pos\t pf_0_pos\t pf_1_pos\t pf_2_pos\t pf_3_pos\t pf_4_pos\t pf_5_pos\t pf_6_pos\t pf_17_pos\t pf_18_pos\t pf_19_pos\t pf_20_pos\t pf_21_pos\t pf_22_pos\t pf_23_pos\t pf_24_pos\t cx7_joint_pos\t cx8_joint_pos\t cx9_joint_pos\t cx10_joint_pos\t cx11_joint_pos\t cx12_joint_pos\t cx13_joint_pos\t cx15_joint_pos\t cx14_joint_pos\t cx16_joint_pos\t cx25_joint_pos\t cx26_joint_pos\t cx27_joint_pos\t cx28_joint_pos\t cx29_joint_pos\t pf_7_pos\t pf_8_pos\t pf_9_pos\t pf_10_pos\t pf_11_pos\t pf_12_pos\t pf_13_pos\t pf_15_pos\t pf_14_pos\t pf_16_pos\t pf_25_pos\t pf_26_pos\t pf_27_pos\t pf_28_pos\t pf_29_pos\t bj0_control\t bj1_control\t bj2_control\t bj3_control\t bj4_control\t bj5_control\t bj6_control\t bj7_control\t bj8_control\t bj9_control\t bj10_control\t bj11_control\t bj12_control\t bj13_control\t bod_orient0\t bod_orient1\t bod_orient2\t bod_orient3\t bod_orient4\t bod_orient5\t bod_orient6\t bod_orient7\t bod_orient8\t bod_orient9\t bod_orient10\t bod_orient11\t bod_orient12\t bod_orient13\t bod_orient14\t bj0_position\t  bj1_position\t bj2_position\t bj3_position\t bj4_position\t bj5_position\t bj6_position\t bj7_position\t bj8_position\t bj9_position\t bj10_position\t bj11_position\t bj12_position\t bj13_position\t  bj14_position\t tr_0_motor_pos\t tr_1_motor_pos\t  tr_2_motor_pos\t  tr_3_motor_pos\t  tr_4_motor_pos\t  tr_5_motor_pos\t  tr_6_motor_pos\t  tr_17_motor_pos\t  tr_18_motor_pos\t  tr_19_motor_pos\t  tr_20_motor_pos\t  tr_21_motor_pos\t  tr_22_motor_pos\t  tr_23_motor_pos\t  tr_24_motor_pos\t  tr_7_motor_pos\t  tr_8_motor_pos\t  tr_9_motor_pos\t  tr_10_motor_pos\t  tr_11_motor_pos\t  tr_12_motor_pos\t  tr_13_motor_pos\t  tr_15_motor_pos\t  tr_14_motor_pos\t  tr_16_motor_pos\t  tr_25_motor_pos\t  tr_26_motor_pos\t  tr_27_motor_pos\t  tr_28_motor_pos\t  tr_29_motor_pos\t  force_0\t force_7\t force_1\t force_8\t force_2\t force_9\t force_3\t force_10\t force_4\t force_11\t force_5\t force_12\t force_6\t force_13\t force_17\t force_15\t force_18\t force_14\t force_19\t force_16\t force_20\t force_25\t force_21\t force_26\t force_22\t force_27\t force_23\t force_28\t force_24\t force_29\t foot_orient\t sysTime\t timeStep\t time\t\n')
@@ -555,7 +555,7 @@ function sysCall_init()
     
     --Associated parameters
 
-    --Connections between the VRN final neuron to the inner joint motors of the legs
+    --notes: Weighttr_I14 is the same as the weight between Tc joint (left) and right sensory signal (I1)
 
     Weighttr_I14 = {{Weighttr0_I14}, {Weighttr1_I14}, {Weighttr2_I14}, {Weighttr3_I14}, {Weighttr4_I14}, {Weighttr5_I14}, {Weighttr6_I14}, {Weighttr17_I14}, {Weighttr18_I14}, {Weighttr19_I14}, {Weighttr20_I14}, {Weighttr21_I14}, {Weighttr22_I14}, {Weighttr23_I14}, {Weighttr24_I14}}
 
@@ -576,7 +576,7 @@ function sysCall_init()
     ---Right motors
     
     --Associated parameters
-    --Connections between the VRN final neuron to the inner joint motors of the legs
+    --notes: Weighttr_I13 is the same as the weight between Tc joint (right) and left sensory signal (I0)
     Weighttr_I13 = {{Weighttr7_I13}, {Weighttr8_I13}, {Weighttr9_I13}, {Weighttr10_I13}, {Weighttr11_I13}, {Weighttr12_I13}, {Weighttr13_I13}, {Weighttr15_I13}, {Weighttr16_I13}, {Weighttr25_I13}, {Weighttr26_I13}, {Weighttr27_I13}, {Weighttr28_I13}, {Weighttr29_I13}}
 
     for c = 1, 15 do
@@ -7058,8 +7058,8 @@ function sysCall_sensing()
     --sim.setGraphStreamValue(graphFour, pf0_left, 180 * sim.getJointVelocity(pf_0)/math.pi)
     --sim.setGraphStreamValue(graphFour, pf0_right, 180 * sim.getJointVelocity(pf_7)/math.pi)
 
-    -- sim.setGraphStreamValue(graphFive, tr0_left, 180 * sim.getJointVelocity(cx0_joint)/math.pi)
-    -- sim.setGraphStreamValue(graphFive, tr0_right, 180 * sim.getJointVelocity(cx7_joint)/math.pi)
+    --sim.setGraphStreamValue(graphFive, tr0_left, 180 * sim.getJointVelocity(cx0_joint)/math.pi)
+    --sim.setGraphStreamValue(graphFive, tr0_right, 180 * sim.getJointVelocity(cx7_joint)/math.pi)
 
     -- Reading the force sensors at each segment
     --Seg_0
