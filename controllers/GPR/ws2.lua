@@ -4,8 +4,7 @@ function sysCall_init()
     file = io.open( "/home/nopparada-m/Desktop/millipede_sim/raw_data/reduce/ws2/square/ws2_square_10", "w+" )
     
     --Determine what parameters to be saved in your above text file
-    file:write('Output_C0\t Output_C1\t IR0_signal\t IR1_signal\t IR0_signal\t IR1_signal\t Output_I0\t Output_I1\t Output_I3b\t Output_I4b\t Output_J0\t Output_J1\t Output_J2\t Output_J3\t Output_J4\t Output_J5\t Output_J6\t Output_J7\t Output_I13\t Output_I14\t tr_0_2_control\t tr_1_2_control\t tr_2_2_control\t tr_3_2_control\t tr_4_2_control\t tr_5_2_control\t tr_6_2_control\t tr_17_2_control\t tr_18_2_control\t tr_19_2_control\t tr_20_2_control\t tr_21_2_control\t tr_22_2_control\t tr_23_2_control\t tr_24_2_control\t pf_0_2_control\t pf_1_2_control\t pf_2_2_control\t pf_3_2_control\t pf_4_2_control\t pf_5_2_control\t pf_6_2_control\t pf_17_2_control\t pf_18_2_control\t pf_19_2_control\t pf_20_2_control\t pf_21_2_control\t pf_22_2_control\t pf_23_2_control\t pf_24_2_control\t tr_7_2_control\t tr_8_2_control\t tr_9_2_control\t tr_10_2_control\t tr_11_2_control\t tr_12_2_control\t tr_13_2_control\t tr_15_2_control\t tr_14_2_control\t tr_16_2_control\t tr_25_2_control\t tr_26_2_control\t tr_27_2_control\t tr_28_2_control\t tr_29_2_control\t pf_7_2_control\t pf_8_2_control\t pf_9_2_control\t pf_10_2_control\t pf_11_2_control\t pf_12_2_control\t pf_13_2_control\t pf_15_2_control\t pf_14_2_control\t pf_16_2_control\t pf_25_2_control\t pf_26_2_control\t pf_27_2_control\t pf_28_2_control\t pf_29_2_control\t tt_0_motor\t tt_1_motor\t tt_2_motor\t tt_3_motor\t tt_4_motor\t tt_5_motor\t tt_6_motor\t tt_17_motor\t tt_18_motor\t tt_19_motor\t tt_20_motor\t tt_21_motor\t tt_22_motor\t tt_23_motor\t tt_24_motor\t tt_7_motor\t tt_8_motor\t tt_9_motor\t tt_10_motor\t tt_11_motor\t tt_12_motor\t tt_13_motor\t tt_15_motor\t tt_14_motor\t tt_16_motor\t tt_25_motor\t tt_26_motor\t tt_27_motor\t tt_28_motor\t tt_29_motor\t a\t b\t cx0_joint_pos\t cx1_joint_pos\t cx2_joint_pos\t cx3_joint_pos\t cx4_joint_pos\t cx5_joint_pos\t cx6_joint_pos\t cx17_joint_pos\t cx18_joint_pos\t cx19_joint_pos\t cx20_joint_pos\t cx21_joint_pos\t cx22_joint_pos\t cx23_joint_pos\t cx24_joint_pos\t pf_0_pos\t pf_1_pos\t pf_2_pos\t pf_3_pos\t pf_4_pos\t pf_5_pos\t pf_6_pos\t pf_17_pos\t pf_18_pos\t pf_19_pos\t pf_20_pos\t pf_21_pos\t pf_22_pos\t pf_23_pos\t pf_24_pos\t cx7_joint_pos\t cx8_joint_pos\t cx9_joint_pos\t cx10_joint_pos\t cx11_joint_pos\t cx12_joint_pos\t cx13_joint_pos\t cx15_joint_pos\t cx14_joint_pos\t cx16_joint_pos\t cx25_joint_pos\t cx26_joint_pos\t cx27_joint_pos\t cx28_joint_pos\t cx29_joint_pos\t pf_7_pos\t pf_8_pos\t pf_9_pos\t pf_10_pos\t pf_11_pos\t pf_12_pos\t pf_13_pos\t pf_15_pos\t pf_14_pos\t pf_16_pos\t pf_25_pos\t pf_26_pos\t pf_27_pos\t pf_28_pos\t pf_29_pos\t bj0_control\t bj1_control\t bj2_control\t bj3_control\t bj4_control\t bj5_control\t bj6_control\t bj7_control\t bj8_control\t bj9_control\t bj10_control\t bj11_control\t bj12_control\t bj13_control\t bod_orient0\t bod_orient1\t bod_orient2\t bod_orient3\t bod_orient4\t bod_orient5\t bod_orient6\t bod_orient7\t bod_orient8\t bod_orient9\t bod_orient10\t bod_orient11\t bod_orient12\t bod_orient13\t bod_orient14\t bj0_position\t  bj1_position\t bj2_position\t bj3_position\t bj4_position\t bj5_position\t bj6_position\t bj7_position\t bj8_position\t bj9_position\t bj10_position\t bj11_position\t bj12_position\t bj13_position\t  bj14_position\t tr_0_motor_pos\t tr_1_motor_pos\t  tr_2_motor_pos\t  tr_3_motor_pos\t  tr_4_motor_pos\t  tr_5_motor_pos\t  tr_6_motor_pos\t  tr_17_motor_pos\t  tr_18_motor_pos\t  tr_19_motor_pos\t  tr_20_motor_pos\t  tr_21_motor_pos\t  tr_22_motor_pos\t  tr_23_motor_pos\t  tr_24_motor_pos\t  tr_7_motor_pos\t  tr_8_motor_pos\t  tr_9_motor_pos\t  tr_10_motor_pos\t  tr_11_motor_pos\t  tr_12_motor_pos\t  tr_13_motor_pos\t  tr_15_motor_pos\t  tr_14_motor_pos\t  tr_16_motor_pos\t  tr_25_motor_pos\t  tr_26_motor_pos\t  tr_27_motor_pos\t  tr_28_motor_pos\t  tr_29_motor_pos\t  force_0\t force_7\t force_1\t force_8\t force_2\t force_9\t force_3\t force_10\t force_4\t force_11\t force_5\t force_12\t force_6\t force_13\t force_17\t force_15\t force_18\t force_14\t force_19\t force_16\t force_20\t force_25\t force_21\t force_26\t force_22\t force_27\t force_23\t force_28\t force_24\t force_29\t foot_orient\t sysTime\t timeStep\t time\t\n')
-    -- Foot_0_contact\t Foot_1_contact\t Foot_2_contact\t Foot_3_contact\t Foot_4_contact\t Foot_5_contact\t Foot_6_contact\t Foot_17_contact\t Foot_18_contact\t Foot_19_contact\t Foot_20_contact\t Foot_21_contact\t Foot_22_contact\t Foot_23_contact\t Foot_24_contact\t Foot_7_contact\t Foot_8_contact\t Foot_9_contact\t Foot_10_contact\t Foot_11_contact\t Foot_12_contact\t Foot_13_contact\t Foot_15_contact\t Foot_14_contact\t Foot_16_contact\t Foot_25_contact\t Foot_0_contac26\t Foot_27_contact\t Foot_28_contact\t Foot_29_contact\t
+    file:write('Output_C0\t Output_C1\t IR0_signal\t IR1_signal\t IR0_signal\t IR1_signal\t Output_I0\t Output_I1\t Output_I3b\t Output_I4b\t tr_0_2_control\t tr_1_2_control\t tr_2_2_control\t tr_3_2_control\t tr_4_2_control\t tr_5_2_control\t tr_6_2_control\t tr_17_2_control\t tr_18_2_control\t tr_19_2_control\t tr_20_2_control\t tr_21_2_control\t tr_22_2_control\t tr_23_2_control\t tr_24_2_control\t pf_0_2_control\t pf_1_2_control\t pf_2_2_control\t pf_3_2_control\t pf_4_2_control\t pf_5_2_control\t pf_6_2_control\t pf_17_2_control\t pf_18_2_control\t pf_19_2_control\t pf_20_2_control\t pf_21_2_control\t pf_22_2_control\t pf_23_2_control\t pf_24_2_control\t tr_7_2_control\t tr_8_2_control\t tr_9_2_control\t tr_10_2_control\t tr_11_2_control\t tr_12_2_control\t tr_13_2_control\t tr_15_2_control\t tr_14_2_control\t tr_16_2_control\t tr_25_2_control\t tr_26_2_control\t tr_27_2_control\t tr_28_2_control\t tr_29_2_control\t pf_7_2_control\t pf_8_2_control\t pf_9_2_control\t pf_10_2_control\t pf_11_2_control\t pf_12_2_control\t pf_13_2_control\t pf_15_2_control\t pf_14_2_control\t pf_16_2_control\t pf_25_2_control\t pf_26_2_control\t pf_27_2_control\t pf_28_2_control\t pf_29_2_control\t tt_0_motor\t tt_1_motor\t tt_2_motor\t tt_3_motor\t tt_4_motor\t tt_5_motor\t tt_6_motor\t tt_17_motor\t tt_18_motor\t tt_19_motor\t tt_20_motor\t tt_21_motor\t tt_22_motor\t tt_23_motor\t tt_24_motor\t tt_7_motor\t tt_8_motor\t tt_9_motor\t tt_10_motor\t tt_11_motor\t tt_12_motor\t tt_13_motor\t tt_15_motor\t tt_14_motor\t tt_16_motor\t tt_25_motor\t tt_26_motor\t tt_27_motor\t tt_28_motor\t tt_29_motor\t a\t b\t cx0_joint_pos\t cx1_joint_pos\t cx2_joint_pos\t cx3_joint_pos\t cx4_joint_pos\t cx5_joint_pos\t cx6_joint_pos\t cx17_joint_pos\t cx18_joint_pos\t cx19_joint_pos\t cx20_joint_pos\t cx21_joint_pos\t cx22_joint_pos\t cx23_joint_pos\t cx24_joint_pos\t pf_0_pos\t pf_1_pos\t pf_2_pos\t pf_3_pos\t pf_4_pos\t pf_5_pos\t pf_6_pos\t pf_17_pos\t pf_18_pos\t pf_19_pos\t pf_20_pos\t pf_21_pos\t pf_22_pos\t pf_23_pos\t pf_24_pos\t cx7_joint_pos\t cx8_joint_pos\t cx9_joint_pos\t cx10_joint_pos\t cx11_joint_pos\t cx12_joint_pos\t cx13_joint_pos\t cx15_joint_pos\t cx14_joint_pos\t cx16_joint_pos\t cx25_joint_pos\t cx26_joint_pos\t cx27_joint_pos\t cx28_joint_pos\t cx29_joint_pos\t pf_7_pos\t pf_8_pos\t pf_9_pos\t pf_10_pos\t pf_11_pos\t pf_12_pos\t pf_13_pos\t pf_15_pos\t pf_14_pos\t pf_16_pos\t pf_25_pos\t pf_26_pos\t pf_27_pos\t pf_28_pos\t pf_29_pos\t bj0_control\t bj1_control\t bj2_control\t bj3_control\t bj4_control\t bj5_control\t bj6_control\t bj7_control\t bj8_control\t bj9_control\t bj10_control\t bj11_control\t bj12_control\t bj13_control\t bod_orient0\t bod_orient1\t bod_orient2\t bod_orient3\t bod_orient4\t bod_orient5\t bod_orient6\t bod_orient7\t bod_orient8\t bod_orient9\t bod_orient10\t bod_orient11\t bod_orient12\t bod_orient13\t bod_orient14\t bj0_position\t  bj1_position\t bj2_position\t bj3_position\t bj4_position\t bj5_position\t bj6_position\t bj7_position\t bj8_position\t bj9_position\t bj10_position\t bj11_position\t bj12_position\t bj13_position\t  bj14_position\t tr_0_motor_pos\t tr_1_motor_pos\t  tr_2_motor_pos\t  tr_3_motor_pos\t  tr_4_motor_pos\t  tr_5_motor_pos\t  tr_6_motor_pos\t  tr_17_motor_pos\t  tr_18_motor_pos\t  tr_19_motor_pos\t  tr_20_motor_pos\t  tr_21_motor_pos\t  tr_22_motor_pos\t  tr_23_motor_pos\t  tr_24_motor_pos\t  tr_7_motor_pos\t  tr_8_motor_pos\t  tr_9_motor_pos\t  tr_10_motor_pos\t  tr_11_motor_pos\t  tr_12_motor_pos\t  tr_13_motor_pos\t  tr_15_motor_pos\t  tr_14_motor_pos\t  tr_16_motor_pos\t  tr_25_motor_pos\t  tr_26_motor_pos\t  tr_27_motor_pos\t  tr_28_motor_pos\t  tr_29_motor_pos\t  force_0\t force_7\t force_1\t force_8\t force_2\t force_9\t force_3\t force_10\t force_4\t force_11\t force_5\t force_12\t force_6\t force_13\t force_17\t force_15\t force_18\t force_14\t force_19\t force_16\t force_20\t force_25\t force_21\t force_26\t force_22\t force_27\t force_23\t force_28\t force_24\t force_29\t foot_orient\t sysTime\t timeStep\t time\t\n')
    
     --Oscillator signal for the pre-processing CPG
     im_movement_factor = -0.3
@@ -466,45 +465,10 @@ function sysCall_init()
     -- Output (initial values for the subsequent VRN and MRC)
     Output_I0 = 0.001
     Output_I1 = 0.001
-    Output_I9 = 0.001
-    Output_I10 = 0.001
-    Output_I11 = 0.001
-    Output_I12 = 0.001
-    Output_I5 = 0.001
-    Output_I6 = 0.001
-    Output_I7 = 0.001
-    Output_I8 = 0.001
     I0_output = 1.0
     I1_output = 1.0
-    Output_I3 = 0.1
-    Output_I4 = 0.1
     Output_I3b = 0.1
     Output_I4b = 0.1
-
-    --Summation (direction controller)
-    Output_J0 = 0.001
-    Output_J1 = 0.001
-    Output_J2 = 0.001
-    Output_J3 = 0.001
-    Output_J4 = 0.001 --summation for J0 and J2
-    Output_J5 = 0.001 --summation for J1 and J3
-    Output_J6 = 0.001
-    Output_J7 = 0.001
-
-    WeightJ00 = 3.0 --recurrent
-    WeightJ11 = 3.0 --recurrent
-    WeightJ22 = 2.0 --recurrent
-    WeightJ33 = 2.0 --recurrent
-
-    WeightJ04 = 1.0 --summation connection
-    WeightJ24 = 1.0 --summation connection
-    WeightJ15 = 1.0 --summation connection
-    WeightJ35 = 1.0 --summation connection
-
-    WeightJ02 = 1.0 --layer connection
-    WeightJ13 = 1.0 --layer connection
-    WeightJ47 = -1.0 --direction control
-    WeightJ56 = -1.0 --direction control 
 
     --Pre-processing CPG function
     Weight_C00 = 1.4
@@ -512,44 +476,6 @@ function sysCall_init()
     Weight_C10 = - (MI + 0.18)
     Weight_C11 = 1.4 
 
-
-    --VRN left 
-    --Neuronal connections for the multiplicative network
-    WeightI9_I4 = 1.7246
-    WeightI10_I4 = -1.7246
-    WeightI11_I4 = -1.7246
-    WeightI12_I4 = 1.7246
-    WeightI14_I9 = 0.5
-    WeightI14_I10 = 0.5
-    WeightI14_I11 = -0.5
-    WeightI14_I12 = -0.5
-    WeightI9_C1 = 1.7246
-    WeightI10_C1 = -1.7246
-    WeightI11_C1 = 1.7246
-    WeightI12_C1 = -1.7246
-    Bias_I9 = -2.48285
-    Bias_I10 = -2.48285
-    Bias_I11 = -2.48285
-    Bias_I12 = -2.48285
-
-    --VRN right 
-    --Neuronal connections for the multiplicative network
-    WeightI5_I3 = 1.7246
-    WeightI6_I3 = -1.7246
-    WeightI7_I3 = -1.7246
-    WeightI8_I3 = 1.7246
-    WeightI5_C1 = 1.7246
-    WeightI6_C1 = -1.7246
-    WeightI7_C1 = 1.7246
-    WeightI8_C1 = -1.7246
-    WeightI13_I5 = 0.5
-    WeightI13_I6 = 0.5
-    WeightI13_I7 = -0.5
-    WeightI13_I8 = -0.5
-    Bias_I5 = -2.48285
-    Bias_I6 = -2.48285
-    Bias_I7 = -2.48285
-    Bias_I8 = -2.48285
 
     ---Left motors
     
@@ -2455,11 +2381,6 @@ function sysCall_actuation()
 
     file:write( string.format("%f\t",Output_I0) )
     file:write( string.format("%f\t",Output_I1) )
-    
-    Activity_I4 = 1--Output_I1 * IR_0
-    Output_I4 = Activity_I4
-    Activity_I3 = 1 --Output_I0 * IR_1
-    Output_I3 = Activity_I3
 
     --body bending control
     Activity_I4b = Output_I1 * -1
@@ -2470,42 +2391,6 @@ function sysCall_actuation()
     file:write( string.format("%f\t",Output_I3b) )
     file:write( string.format("%f\t",Output_I4b) )
 
-    file:write( string.format("%f\t",Output_J0) )
-    file:write( string.format("%f\t",Output_J1) )
-    file:write( string.format("%f\t",Output_J2) )
-    file:write( string.format("%f\t",Output_J3) )
-    file:write( string.format("%f\t",Output_J4) )
-    file:write( string.format("%f\t",Output_J5) )
-
-    file:write( string.format("%f\t",Output_J6) )
-    file:write( string.format("%f\t",Output_J7) )
-
-    --Neuronal equations for the neurons inside the VRN (new version)
-    Activity_I9 = WeightI9_I4 * Output_I4 + WeightI9_C1 * Output_C1 + Bias_I9 
-    Activity_I10 = WeightI10_I4 * Output_I4 + WeightI10_C1 * Output_C1 + Bias_I10 
-    Activity_I11 = WeightI11_I4 * Output_I4 + WeightI11_C1 * Output_C1 + Bias_I11 
-    Activity_I12 = WeightI12_I4 * Output_I4 + WeightI12_C1 * Output_C1 + Bias_I12 
-    Activity_I14 = WeightI14_I9 * Output_I9 + WeightI14_I10 * Output_I10 + WeightI14_I11 * Output_I11 + WeightI14_I12 * Output_I12 
-    Output_I9 = (math.exp(2*Activity_I9)-1)/(math.exp(2*Activity_I9)+1) --tanh
-    Output_I10 = (math.exp(2*Activity_I10)-1)/(math.exp(2*Activity_I10)+1)
-    Output_I11 = (math.exp(2*Activity_I11)-1)/(math.exp(2*Activity_I11)+1)
-    Output_I12 = (math.exp(2*Activity_I12)-1)/(math.exp(2*Activity_I12)+1)
-    Output_I14 = (math.exp(2*Activity_I14)-1)/(math.exp(2*Activity_I14)+1)
-
-    --Neuronal equations for the neurons inside the VRN (new version)
-    Activity_I5 = WeightI5_I3 * Output_I3 + WeightI5_C1 * Output_C1 + Bias_I5
-    Activity_I6 = WeightI6_I3 * Output_I3 + WeightI6_C1 * Output_C1 + Bias_I6
-    Activity_I7 = WeightI7_I3 * Output_I3 + WeightI7_C1 * Output_C1 + Bias_I7 
-    Activity_I8 = WeightI8_I3 * Output_I3 + WeightI8_C1 * Output_C1 + Bias_I8 
-    Activity_I13 = WeightI13_I5 * Output_I5 + WeightI13_I6 * Output_I6 + WeightI13_I7 * Output_I7 + WeightI13_I8 * Output_I8 
-    Output_I5 = (math.exp(2*Activity_I5)-1)/(math.exp(2*Activity_I5)+1)
-    Output_I6 = (math.exp(2*Activity_I6)-1)/(math.exp(2*Activity_I6)+1)
-    Output_I7 = (math.exp(2*Activity_I7)-1)/(math.exp(2*Activity_I7)+1)
-    Output_I8 = (math.exp(2*Activity_I8)-1)/(math.exp(2*Activity_I8)+1)
-    Output_I13 = (math.exp(2*Activity_I13)-1)/(math.exp(2*Activity_I13)+1)
-    
-    file:write( string.format("%f\t",Output_I13) )
-    file:write( string.format("%f\t",Output_I14) )
     
     --Wave gait
     --trochanter
